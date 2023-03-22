@@ -22,23 +22,8 @@ return(
             <td>Francisco Chang</td>
             <td>Mexico</td>
         </tr>
-        </table>
-        <p>
-This paragraph
-contains a lot of lines
-in the source code,
-but the browser
-ignores it.
-</p>
-
-<p>
-This paragraph
-contains         a lot of spaces
-in the source         code,
-but the        browser
-ignores it.
-</p>
-</ContainerPage>
+        </table>        
+    </ContainerPage>
     </>
 )
 

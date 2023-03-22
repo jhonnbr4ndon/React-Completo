@@ -8,5 +8,6 @@ function Footer (){
             DIREITOS AUTORAIS DA FIAP
         </div>
     </AreaFooter>
-)};
+    )
+};
 export default Footer;

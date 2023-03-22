@@ -1,5 +1,5 @@
 import React from 'react';
-import {AreaHeader} from './styled';
+import {AreaHeader} from '../main';
 import {Link} from 'react-router-dom';
 import imgLogo from "../../imagens/logo192.png"
 
@@ -18,13 +18,9 @@ function Header() {
           
         <nav>
           <ul>
-            <li> <a href='/'> INDEX</a></li>
-            <li> <a href='/sobre'>SOBRE</a></li>
-            <li> <a href='/cep'>CEP</a></li>
-
-            <li><Link to='/sobre'>  SOBRE V2</Link> </li>
-            <li><Link to='/'>  INDEX V2</Link> </li>
-
+            <li> <Link to='/'> INDEX</Link></li>
+            <li> <Link to='/sobre'>SOBRE</Link></li>
+            <li> <Link to='/cep'>CEP</Link></li>
           </ul>
         </nav>
       </div>
