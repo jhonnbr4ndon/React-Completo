@@ -1,6 +1,7 @@
 import React from "react";
 import {ContainerPage, TittlePage} from '../../components/main'
 import { useState } from "react";
+import emailjs from "@emailjs/browser"
 
 export default function Email(){
 
@@ -14,6 +15,20 @@ export default function Email(){
             alert('Preencha os campos do form');
             return;
         }
+        
+        const templateParams ={
+            from_name:name,
+            message:message,
+            email:email
+            
+        }
+        emailjs.send("service_3rmzovo","template_yv10wkf",templateParams,"mqcupiZSpJiMu_uJm")
+        .then((response) => {
+            console.log("E-mail enviado com sucesso", response.status, response.text)
+        },
+        (erro) =>{
+            console.log("Erro ao enviar:", erro.status, erro.text)
+        })
         
     }
     
